@@ -26,11 +26,13 @@ app.
 # package.json
 "scripts": {
   "tauri": "tauri",
+  ...
 }
 
 # src-tauri/tauri.config.json
 "build": {
   "distDir": "../public",
+  ...
 },
 ```
 
