@@ -37,7 +37,6 @@ app.
 },
 ```
 
-
 ## Development
 
 Install the dependencies and start your Svelte development server:
@@ -53,11 +52,19 @@ cd svelte-app
 npm run tauri dev
 ```
 
+## Build
+```bash
+npm run build
+npm run tauri build 
+# look for the released .app and .dmg files in "pactify/src-tauri/target/release/bundle/"
+```
+
+
 You should see your Tauri app window display the Svelte "Hello World" app. This
 will take a while to happen the first time you do this, while dependencies are
 downloaded and built.
 
-## Next
+## Info
 
 This template is just to get your development environment set up. For how to
 proceed from this point, refer to the Svelte and Tauri websites.
