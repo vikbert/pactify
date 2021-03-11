@@ -16,25 +16,41 @@ If that doesn't appear to be working, `yarn tauri info` might give some helpful 
 ## Create A Tauri + Svelte App 
 1. Create a new Tauri + Svelte project using
 ```bash
-  npx degit happybeing/tauri-svelte-template svelte-app
+  npx degit vikbert/pactify svelte-app
   cd svelte-app
 ```
 
 2. Edit the `config.json` and `src-tauri/tauri.config.json` files to configure your
 app.
+```bash
+# package.json
+"scripts": {
+  "tauri": "tauri",
+}
+
+# src-tauri/tauri.config.json
+"build": {
+  "distDir": "../public",
+  "devPath": "http://localhost:5000",
+  "beforeDevCommand": "",
+  "beforeBuildCommand": ""
+},
+```
+
 
 ## Development
 
 Install the dependencies and start your Svelte development server:
 ```bash
 cd svelte-app
-yarn && yarn dev
+npm install
+npm run dev
 ```
 
 In another console, start the Tauri development environment:
 ```bash
 cd svelte-app
-yarn tauri dev
+npm run tauri dev
 ```
 
 You should see your Tauri app window display the Svelte "Hello World" app. This
