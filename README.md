@@ -31,9 +31,6 @@ app.
 # src-tauri/tauri.config.json
 "build": {
   "distDir": "../public",
-  "devPath": "http://localhost:5000",
-  "beforeDevCommand": "",
-  "beforeBuildCommand": ""
 },
 ```
 
